@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Lato", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+        
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    gap: 100px;
+   
+
+
+}
+
+.left-side{
+   flex: 1;
+
+}
+.left-side p{
+    color: grey;
+}
+
+.right-side {
+    border: 2px solid #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form .input-flex{
+    display:flex;
+    column-gap: 15px;
+    flex: 1;
+}
+
+.input-flex .form-group{
+   width: 100%
+}
+.form-group input, select{
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; 
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input,
+select {
+    width: calc(100%- 16px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+button {
+    background-color: #4caf50; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+
+.terms {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #777; 
+}
+
+.terms a {
+    color: #2196f3; 
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+   form .input-flex{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .input-flex .form-group {
+        flex-basis: 100%; 
+        margin-bottom: 15px;
+    }
+
+    .left-side h1{
+        padding-top: 40px;
+    }
+
+    
+}
