@@ -1,168 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
-    font-family: sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    color: #333;
+  font-family: "Lato", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  color: #333;
 }
 
 nav {
-    background-color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 .nav-links li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    padding: 40px;
-    flex: 1;
-    width: 900px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 40px;
+  flex: 1;
+  width: 900px;
 }
 
 .checkout-panel {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    
-    flex-basis: 66.6%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+
+  flex-basis: 66.6%;
 }
 
 .header .title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding: 30px 0 30px;
 }
 
 .step {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .step-title {
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.input-flex{
-    display: flex;
-    width: 100%;
-    flex: 1;
+.input-flex {
+  display: flex;
+  width: 100%;
+  flex: 1;
 }
+
 
 .input-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 0.9em;
-    color: #666;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #666;
 }
 
 input[type="text"],
 input[type="email"] {
-    width: calc(100% - 12px);
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: calc(100% - 12px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .submit-button {
-    background-color: #2ecc71;
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    font-weight: bold;
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
 }
 
-.help, .terms {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #666;
+.help,
+.terms {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
 }
 
 .pricing-panel {
-    background-color: dodgerblue;
-    color: white;
-    border-radius: 8px;
-    padding: 30px;
-    text-align: center;
-    flex-basis: 33.3%;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 8px;
+  padding: 0px;
+  text-align: left;
+  flex-basis: 33.3%;
 }
 
-.panel-header {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.pricing-panel-content {
+    padding: 50px 30px 70px;
+}
+
+.plan {
+    padding: 0px;
+    margin-bottom: 70px;
+
+}
+
+.renewal {
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+.panel-header  {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 5px;
 }
 
 .price {
-    font-size: 2em;
-    margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 5px;
 }
 
 .price span {
-    font-size: 0.5em;
+  font-size: 0.5em;
 }
 
 .features ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .features li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .cta {
-    font-size: 0.9em;
+  font-size: 0.9em;
+  margin-bottom: 50px;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: auto;
 }
